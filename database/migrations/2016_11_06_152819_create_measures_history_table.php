@@ -15,8 +15,11 @@ class CreateMeasuresHistoryTable extends Migration
         Schema::create('measures_history', function (Blueprint $table) {
             $table->increments('id');
 
-            $table->unsignedInteger('product_regions_id');
-            $table->foreign('product_regions_id')->references('id')->on('products_regions');
+            $table->unsignedInteger('products_regions_id');
+            $table->foreign('products_regions_id')->references('id')->on('products_regions');
+
+            $table->unsignedInteger('measure_id');
+            $table->foreign('measure_id')->references('id')->on('measures');
 
             $table->unsignedInteger('amount');
             $table->float('price');

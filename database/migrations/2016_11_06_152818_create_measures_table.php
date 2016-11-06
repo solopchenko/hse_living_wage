@@ -20,10 +20,6 @@ class CreateMeasuresTable extends Migration
 
             $table->unsignedInteger('region_id');
             $table->foreign('region_id')->references('id')->on('regions');
-
-            $table->unsignedInteger('measure_history_id');
-            $table->foreign('measure_history_id')->references('id')->on('measures_history');
-
         });
     }
 
