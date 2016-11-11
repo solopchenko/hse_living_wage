@@ -1,0 +1,19 @@
+body {
+    background-color: #fff;
+}
+
+.form-group.form-table {
+    margin: -10px 0 0 0;
+}
+
+div.table, div.table-responsive {
+    padding: 20px 0;
+}
+
+.table tbody tr td {
+    border-top: none;
+}
+
+.table tbody tr:first-child td {
+    padding-top: 20px;
+}
