@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('living_wage.index');
+});
+
+Route::get('/test', function () {
+    return view('pages.about');
 });
